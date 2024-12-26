@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Светлая тема */
+:root {
+  --background: #f4f4f5;
+  --midground: #e4e4e7;
+  --foreground: #cccccc;
+  --reverse: #242427;
+  --accent: #4f46e5;
+  --text: #000;
+}
+
+/* Тёмная тема */
+.dark {
+  --background: #18181b;
+  --midground: #242427;
+  --foreground: #36363a;
+  --reverse: #e4e4e7;
+  --accent: #4f46e5;
+  --text: #fff;
+}
+
+html {
+  @apply bg-background text-text;
+}
+
+input {
+  @apply text-text;
+}
+
+body {
+  font-size: 20px;
+  height: 100vh;
+  max-width: 100%;
+  margin: 0 auto;
+}

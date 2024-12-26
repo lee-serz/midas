@@ -1,0 +1,15 @@
+.input-field {
+  @apply w-full p-2 border border-neutral-700 rounded focus:outline-none focus:border-accent bg-transparent transition-colors mt-1;
+}
+
+.btn-primary {
+  &:hover {
+  }
+}
+
+.recaptcha {
+  @apply bg-foreground;
+  > div > div {
+    @apply bg-foreground;
+  }
+}
